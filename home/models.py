@@ -47,3 +47,10 @@ class Student(models.Model):
     tests = models.CharField(
         max_length=256,
     )
+
+
+class Books(models.Model):
+    "Generated Model"
+    user2 = models.CharField(
+        max_length=256,
+    )
