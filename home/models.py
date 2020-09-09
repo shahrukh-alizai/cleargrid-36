@@ -75,3 +75,11 @@ class NewApp(models.Model):
 
     class Meta:
         verbose_name_plural = "NewApp"
+
+
+class Hello(models.Model):
+    "Generated Model"
+    asdfsdf = models.BigIntegerField()
+
+    class Meta:
+        verbose_name_plural = "Hello"

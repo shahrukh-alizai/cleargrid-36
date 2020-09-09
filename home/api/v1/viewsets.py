@@ -4,6 +4,7 @@ from .serializers import (
     BooksSerializer,
     CustomTextSerializer,
     DemoSerializer,
+    HelloSerializer,
     HomePageSerializer,
     NewAppSerializer,
     StudentSerializer,
@@ -22,7 +23,7 @@ from home.api.v1.serializers import (
     HomePageSerializer,
     UserSerializer,
 )
-from home.models import Books, CustomText, Demo, HomePage, NewApp, Student, Test
+from home.models import Books, CustomText, Demo, Hello, HomePage, NewApp, Student, Test
 
 
 class SignupViewSet(ModelViewSet):
@@ -105,3 +106,12 @@ class NewAppViewSet(viewsets.ModelViewSet):
         authentication.TokenAuthentication,
     )
     queryset = NewApp.objects.all()
+
+
+class HelloViewSet(viewsets.ModelViewSet):
+    serializer_class = HelloSerializer
+    authentication_classes = (
+        authentication.SessionAuthentication,
+        authentication.TokenAuthentication,
+    )
+    queryset = Hello.objects.all()

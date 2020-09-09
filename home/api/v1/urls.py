@@ -4,6 +4,7 @@ from .viewsets import (
     BooksViewSet,
     CustomTextViewSet,
     DemoViewSet,
+    HelloViewSet,
     HomePageViewSet,
     NewAppViewSet,
     StudentViewSet,
@@ -27,6 +28,7 @@ router.register("student", StudentViewSet)
 router.register("books", BooksViewSet)
 router.register("test", TestViewSet)
 router.register("newapp", NewAppViewSet)
+router.register("hello", HelloViewSet)
 
 urlpatterns = [
     path("", include(router.urls)),
