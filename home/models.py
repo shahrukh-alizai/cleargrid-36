@@ -54,3 +54,8 @@ class Books(models.Model):
     user2 = models.CharField(
         max_length=256,
     )
+
+
+class Test(models.Model):
+    "Generated Model"
+    newapp = models.BigIntegerField()
