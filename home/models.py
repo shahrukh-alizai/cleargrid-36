@@ -59,3 +59,19 @@ class Books(models.Model):
 class Test(models.Model):
     "Generated Model"
     newapp = models.BigIntegerField()
+
+
+class NewApp(models.Model):
+    "Generated Model"
+    user2 = models.BigIntegerField()
+
+    class Meta:
+        verbose_name_plural = "NewApp"
+
+
+class NewApp(models.Model):
+    "Generated Model"
+    user2 = models.BigIntegerField()
+
+    class Meta:
+        verbose_name_plural = "NewApp"
