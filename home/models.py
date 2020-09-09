@@ -40,3 +40,10 @@ class Demo(models.Model):
     name = models.CharField(
         max_length=256,
     )
+
+
+class Student(models.Model):
+    "Generated Model"
+    tests = models.CharField(
+        max_length=256,
+    )
